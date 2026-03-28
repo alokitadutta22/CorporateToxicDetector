@@ -2,6 +2,10 @@
 
 > **SIH 2024 Digital Safety | Enterprise-Grade Hybrid ML + LLM Application**
 
+### 🔴 [Live Demo → alokita-corporate-toxic-detector.hf.space](https://alokita-corporate-toxic-detector.hf.space)
+
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Alokita/corporate-toxic-detector)
+
 A production-ready system that detects toxic, harassing, and threatening language in corporate communications. It combines a **fast ML model** with a **deep-learning LLM** to catch both obvious and evasive toxic content — including leet speak (`f@ck`), jumbled letters (`fcuk`), and unicode tricks.
 
 ---
