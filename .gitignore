@@ -1,0 +1,49 @@
+# ═══════════════════════════════════════════
+# Git Ignore — Corporate Toxic Detector
+# ═══════════════════════════════════════════
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+
+# Data files (too large for git — download separately)
+data/train.csv
+data/cleaned_train.csv
+data/corporate_audit.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Docker
+.dockerignore
+
+# Gemini / Agent
+.gemini/
+
+# HF Spaces deploy clone
+hf-deploy/

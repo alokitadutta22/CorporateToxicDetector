@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════
+# Corporate Toxic Comment Detector
+# Docker Compose Configuration
+# ═══════════════════════════════════════════
+
+services:
+  app:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:7860/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
